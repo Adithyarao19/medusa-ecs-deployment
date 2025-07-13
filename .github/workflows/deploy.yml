@@ -30,8 +30,7 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build Docker image
-      run: |
-        run: docker build -t medusa:latest ./medusa
+      run: docker build -t medusa:latest ./medusa
 
     - name: Tag & Push to ECR
       env:
