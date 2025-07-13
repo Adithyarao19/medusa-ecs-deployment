@@ -5,6 +5,7 @@ on:
     branches: 
         - main
 
+
 env:
   AWS_REGION: us-east-1
   IMAGE_TAG: latest
@@ -30,7 +31,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t medusa:${{ env.IMAGE_TAG }} .
+        run: docker build -t medusa:latest ./medusa
 
     - name: Tag & Push to ECR
       env:
