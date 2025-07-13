@@ -1,0 +1,12 @@
+{
+  "name": "medusa-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "medusa develop"
+  },
+  "dependencies": {
+    "@medusajs/medusa": "^1.15.0",
+    "pg": "^8.7.1"
+  }
+}
